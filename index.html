@@ -83,8 +83,8 @@
             <h1>Desk Stretches</h1>
         </div>
         <div class="right-subdiv">
-            <label for="reps">Reps:</label>
-            <input type="text" id="reps" name="reps" value="10">
+            <label for="counterLimit">Counter:</label>
+            <input type="text" id="counterLimit" name="counterLimit" value="10">
             <button id="startButton">Start</button>
         </div>
     </div>
@@ -115,7 +115,7 @@
     function startCounter() {
         let count = 0;
         const counterElement = document.getElementById('counter');
-        const counterLimit = parseInt(document.getElementById('reps').value, 10);
+        const counterLimit = parseInt(document.getElementById('counterLimit').value, 10);
         const interval = setInterval(() => {
             count += 1;
             counterElement.textContent = count;
